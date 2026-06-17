@@ -76,8 +76,8 @@ $if(bank.bsb)$
   bank: (
     bank name: "$bank.bankname$",
     name: "$bank.name$",
-    BSB: "$bank.bsb",
-    acc: "$bank.acc"
+    BSB: "$bank.bsb$",
+    acc: "$bank.acc$"
   ),
 $endif$
 $if(lang)$
