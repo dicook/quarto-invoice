@@ -145,16 +145,6 @@ formats:
                 description: "VAT rate as a percentage."
     bank:
       type: object
-      description: "Bank details for payment."
-      properties:
-        bic:
-          type: string
-          description: "Bank BIC/SWIFT code."
-        iban:
-          type: string
-          description: "Bank IBAN."
-    dombank:
-      type: object
       description: "Domestic bank details for payment."
       properties:
         bankname:

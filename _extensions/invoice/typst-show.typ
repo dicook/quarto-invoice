@@ -68,16 +68,10 @@ $endif$
 $endif$
 $if(bank)$
   bank: (
-    iban: "$bank.iban$",
-    bic: "$bank.bic$"
-  ),
-$endif$
-$if(dombank)$
-  bank: (
-    bank: "$dombank.bankname$",
-    name: "$dombank.name$",
-    BSB: "$dombank.bsb$",
-    acc: "$dombank.acc$"
+    bank: "$bank.bankname$",
+    name: "$bank.name$",
+    BSB: "$bank.bsb$",
+    acc: "$bank.acc$"
   ),
 $endif$
 $if(lang)$

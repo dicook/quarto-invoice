@@ -228,31 +228,16 @@
   })
 
   align(bottom, {
-    if "bic" in bank and "iban" in bank and bank != none {
+    if bank != none {
       heading(level: 3, "Payment information")
       v(fontsize * 0.5)
-      "BIC: " + bank.at("bic").replace("\\", "")
+      "bank: " + bank.at("bankname").replace("\\", "")
       linebreak()
-      "IBAN: " + bank.at("iban").replace("\\", "")
+      "name: " + bank.at("name").replace("\\", "")
       linebreak()
-      "Reference: " + strong(invoice.at("reference").replace("\\", ""))
+      "BSB: " + bank.at("bsb").replace("\\", "")
       linebreak()
-      text(luma(100), emph("To be used as label on your bank transfer to identify the transaction."))
-      linebreak()
-    } else {
-      hide("a")
-    }
- 
-    if dombank != none {
-      heading(level: 3, "Payment information")
-      v(fontsize * 0.5)
-      "bank: " + dombank.at("bankname").replace("\\", "")
-      linebreak()
-      "name: " + dombank.at("name").replace("\\", "")
-      linebreak()
-      "BSB: " + dombank.at("bsb").replace("\\", "")
-      linebreak()
-      "acc: " + dombank.at("acc").replace("\\", "")
+      "acc: " + bank.at("acc").replace("\\", "")
       linebreak()
     } else {
       hide("a")
