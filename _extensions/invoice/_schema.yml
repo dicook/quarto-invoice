@@ -153,6 +153,10 @@ formats:
         iban:
           type: string
           description: "Bank IBAN."
+    dombank:
+      type: object
+      description: "Domestic bank details for payment."
+      properties:
         bankname:
           type: string
           description: "Name of bank."
