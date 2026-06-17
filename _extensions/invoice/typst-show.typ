@@ -74,7 +74,7 @@ $if(bank.iban)$
 $endif$
 $if(bank.bsb)$
   bank: (
-    bank name: "$bank.bankname$",
+    bank: "$bank.bankname$",
     name: "$bank.name$",
     BSB: "$bank.bsb$",
     acc: "$bank.acc$"
