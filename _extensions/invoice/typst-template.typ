@@ -242,6 +242,7 @@
     } else {
       hide("a")
     }
+ 
     if "bsb" in dombank and "acc" in dombank and dombank != none {
       heading(level: 3, "Payment information")
       v(fontsize * 0.5)
