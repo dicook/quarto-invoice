@@ -36,6 +36,7 @@
   recipient: none,
   invoice: none,
   bank: none,
+  dombank: none,
   fee: 2.28,
   penalty: 40,
   currency: "EUR",
@@ -244,13 +245,13 @@
     if "bsb" in dombank and "acc" in dombank and dombank != none {
       heading(level: 3, "Payment information")
       v(fontsize * 0.5)
-      "bank: " + bank.at("bankname").replace("\\", "")
+      "bank: " + dombank.at("bankname").replace("\\", "")
       linebreak()
-      "name: " + bank.at("name").replace("\\", "")
+      "name: " + dombank.at("name").replace("\\", "")
       linebreak()
-      "BSB: " + bank.at("bsb").replace("\\", "")
+      "BSB: " + dombank.at("bsb").replace("\\", "")
       linebreak()
-      "acc: " + bank.at("acc").replace("\\", "")
+      "acc: " + dombank.at("acc").replace("\\", "")
       linebreak()
     } else {
       hide("a")
