@@ -66,10 +66,18 @@ $endfor$
 $endif$
   ),
 $endif$
-$if(bank)$
+$if(bank.iban)$
   bank: (
     iban: "$bank.iban$",
     bic: "$bank.bic$"
+  ),
+$endif$
+$if(bank.bsb)$
+  bank: (
+    bank name: "$bank.bankname$",
+    name: "$bank.name$",
+    BSB: "$bank.bsb",
+    acc: "$bank.acc"
   ),
 $endif$
 $if(lang)$

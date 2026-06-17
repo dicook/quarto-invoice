@@ -238,6 +238,18 @@
       linebreak()
       text(luma(100), emph("To be used as label on your bank transfer to identify the transaction."))
       linebreak()
+    } else 
+        if "bsb" in bank and "acc" in bank and bank != none {
+          heading(level: 3, "Payment information")
+          v(fontsize * 0.5)
+          "bank: " + bank.at("bankname").replace("\\", "")
+          linebreak()
+          "name: " + bank.at("name").replace("\\", "")
+          linebreak()
+          "BSB: " + bank.at("bsb").replace("\\", "")
+          linebreak()
+          "acc: " + bank.at("acc").replace("\\", "")
+          linebreak()
     } else {
       hide("a")
     }
