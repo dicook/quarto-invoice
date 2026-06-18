@@ -2,13 +2,15 @@
 
 This is a Quarto template that assists you in creating PDF invoices via Typst.
 
+This has been modified from [https://github.com/mcanouil/quarto-invoice](https://github.com/mcanouil/quarto-invoice) to take Australian bank details, which include bank name, number (BSB), account name and number.
+
 ## Creating a New Invoice
 
 You can use this as a template to create an invoice.
 To do this, use the following command:
 
 ```bash
-quarto use template mcanouil/quarto-invoice@2.0.0
+quarto use template dicook/quarto-invoice
 ```
 
 This will install the extension and create an example qmd file that you can use as a starting place for your invoice.
@@ -19,7 +21,7 @@ You may also use this format with an existing Quarto project or document.
 From the Quarto project or document directory, run the following command to install this format:
 
 ```bash
-quarto add mcanouil/quarto-invoice@2.0.0
+quarto add dicook/quarto-invoice
 ```
 
 ## Usage

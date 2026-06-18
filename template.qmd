@@ -27,8 +27,10 @@ invoice:
       unit-price: 12345.67
       vat: 0
 bank:
-  bic: AZERTYUI
-  iban: FR12 1234 4567 7890 1234 5678 901
+  bankname: OZBANK
+  bsb: 111111
+  name: Eastern Quoll
+  acc: 111111111
 recipient:
   name: Company, Inc.
   address:
