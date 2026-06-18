@@ -228,7 +228,7 @@
   })
 
   align(bottom, {
-    if bank != none {
+    if "bsb" in bank and "acc" in bank and bank != none {
       heading(level: 3, "Payment information")
       v(fontsize * 0.5)
       "bank: " + bank.at("bankname").replace("\\", "")

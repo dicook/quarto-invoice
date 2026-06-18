@@ -68,9 +68,9 @@ $endif$
 $endif$
 $if(bank)$
   bank: (
-    bank: "$bank.bankname$",
+    bankname: "$bank.bankname$",
     name: "$bank.name$",
-    BSB: "$bank.bsb$",
+    bsb: "$bank.bsb$",
     acc: "$bank.acc$"
   ),
 $endif$

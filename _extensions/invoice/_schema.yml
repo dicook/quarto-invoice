@@ -145,17 +145,17 @@ formats:
                 description: "VAT rate as a percentage."
     bank:
       type: object
-      description: "Domestic bank details for payment."
+      description: "Bank details for payment."
       properties:
         bankname:
           type: string
-          description: "Name of bank."
+          description: "Bank name."
         bsb:
           type: string
           description: "Bank number."
         name:
           type: string
-          description: "Name of account."
+          description: "Account name."
         acc:
           type: string
           description: "Account number."
